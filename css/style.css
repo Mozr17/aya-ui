@@ -71,3 +71,10 @@ code {
   -webkit-animation: chargement .75s linear infinite;
   animation: chargement .75s linear infinite;
 }
+
+@media screen and (max-width:680px){
+  .sansnom .cote {
+     width:10%;
+     bright:10%;
+}
+}
