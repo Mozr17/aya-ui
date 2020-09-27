@@ -1,7 +1,7 @@
 // debut du code JQUERY
 $(function () {
 	
-	
+	Alerte("akwaba")
 
 });
 
