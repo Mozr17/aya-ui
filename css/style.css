@@ -1,0 +1,73 @@
+.sansnom .cote {
+	background-color: #fc5e16;
+	width: 20%;
+	height: 100%;
+	position: fixed;
+}
+
+.sansnom .corps {
+	position: absolute;
+	width: 75%;
+	left: 20%;
+	top:7%;
+	padding-left: 20px;
+	padding-bottom: 200px;
+}
+
+.sansnom .cote ul {
+	padding-left:50px;
+}
+.sansnom .cote ul li{
+	list-style: none;
+	padding-bottom: 5px;
+}
+.sansnom .cote ul li a {
+	text-decoration: none;
+	font-style: normal;
+	color: white;
+	font-size: 17px;
+	opacity: .9;
+	cursor: pointer;
+}
+.sansnom .cote ul li a:hover {
+	opacity: 1;
+	transition: .2s;
+}
+
+code {
+	font-family: consolas;
+}
+
+.actif {
+	opacity: 1 !important;
+}
+
+.decaler {
+	padding-left: 25px;
+}
+
+.balise {
+	color: orange;
+}
+.attr {
+	color: blue;	
+}
+
+@keyframes chargement {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.chargement {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  vertical-align: text-bottom;
+  border: 1px solid #fc5e17 ;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: chargement .75s linear infinite;
+  animation: chargement .75s linear infinite;
+}

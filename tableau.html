@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>AYAui Documentation</title>
+		<meta charset="utf-8">
+		<link rel='icon' href='images/ico.png' type='image/png'/>
+		<link rel='stylesheet' href='css/AYAui.css' type='text/css'/>
+		<link rel='stylesheet' href='css/style.css' type='text/css'/>
+	</head>
+	
+	<header>
+		<nav>
+			<div class="fond-blanc texte-noir bordure" style="position: fixed;width: 100%;z-index: 100;">
+				<a href="index.php"class="menu-logo"><img src="images/logo.png" style="width: 100px !important;"></a>
+				<div class="menu-liens">
+
+				</div>
+			</div>
+		</nav>
+	</header>
+	<body> 
+		
+		<div class="sansnom">
+			
+			<div class="cote texte-blanc">
+			<br><br><br>
+			<ul>
+				<li><a class="actif" href="index.html">Accueil</a></li>
+				<li><a class="actif" href="installation.html">Installation</a></li>
+				<h3>Composants</h3>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="notice.html">Notices</a></li>
+				<li><a href="etiquette.html">Etiquette</a></li>
+				<li><a href="bouton.html">Bouton</a></li>
+				<li><a href="liste.html">Liste</a></li>
+				<li><a href="formulaires.html">Formulaires</a></li>
+				<li><a href="tableau.html">Tableau</a></li>
+
+				<br><br>
+				<h3>Outils</h3>
+				<li><a href="couleurs.html">Couleurs</a></li>
+				<li><a href="bordures.html">Bordures</a></li>
+				<li><a href="arrondi.html">Arrondi</a></li>
+				<li><a href="ombres.html">Ombres</a></li>
+				<h3>Pages</h3>
+				<li><a href="conteneur.html">Conteneur</a></li>
+				<li><a href="box.html">Box</a></li>
+			</ul>
+			</div>
+			<div class="corps"><h1 class="titre texte-orange">Tableau</h1>
+<p class="titre-4">Lister des informations.</p>
+<br>
+
+<!-- tableau -->
+<a class="titre-3 texte-orange">Tableau</a>
+<div class="bordure pd-8 arrondi">
+	
+	<table class="tableau">
+		 <tbody><tr>       
+		 	<th>id</th>       
+		 	<th>Nom</th>       
+		 	<th>Prenom</th>   
+		 	<th>Genre</th> 
+		 </tr>   
+		 <tr>       
+		 	<td>1</td>       
+		 	<td>Yeo</td>       
+		 	<td>Zanga</td>   
+		 	<td>Homme</td>
+		 </tr>   
+		 <tr>       
+		 	<td>2</td>       
+		 	<td>Kouadio</td>       
+		 	<td>Aya</td>   
+		 	<td>Femme</td> 
+		 </tr>
+		 <tr>       
+		 	<td>3</td>       
+		 	<td>Diomandé</td>       
+		 	<td>Yeli</td>   
+		 	<td>Femme</td> 
+		 </tr> 
+	</tbody></table>
+
+</div>
+
+
+<div class="bordure pd-8 arrondi">
+<small class="fond-orange texte-blanc">code source</small><br>
+
+	&lt;table class="tableau"&gt;<br>
+	<div class="decaler">
+		&lt;tr&gt;<br>      
+		<div class="decaler">
+			&lt;th&gt;id&lt;/th&gt;<br>       
+		 	&lt;th&gt;Nom&lt;/th&gt; <br>      
+		 	&lt;th&gt;Prenom&lt;/th&gt; <br>  
+		 	&lt;th&gt;Genre&lt;/th&gt; <br>
+		</div> 
+		 &lt;/tr&gt;   <br>
+
+		 &lt;tr&gt; <br>   
+		 <div class="decaler">
+		 	&lt;td&gt;1&lt;/td&gt;<br>       
+		 	&lt;td&gt;Yeo&lt;/td&gt;  <br>     
+		 	&lt;td&gt;Zanga&lt;/td&gt;<br>   
+		 	&lt;td&gt;Homme&lt;/td&gt;<br>
+		 </div>   
+		 	
+		 &lt;/tr&gt;   <br>
+		 &lt;tr&gt;   <br>  
+		 <div class="decaler">
+		 	&lt;td&gt;2&lt;/td&gt; <br>      
+		 	&lt;td&gt;Kouadio&lt;/td&gt;  <br>     
+		 	&lt;td&gt;Aya&lt;/td&gt;   <br>
+		 	&lt;td&gt;Femme&lt;/td&gt; <br>
+		 </div>  
+		 	
+		 &lt;/tr&gt;<br>
+		 &lt;tr&gt;   <br>   
+		 <div class="decaler">
+		 	&lt;td&gt;3&lt;/td&gt;  <br>     
+		 	&lt;td&gt;Diomandé&lt;/td&gt;  <br>     
+		 	&lt;td&gt;Yeli&lt;/td&gt;   <br>
+		 	&lt;td&gt;Femme&lt;/td&gt;<br> 
+		 </div> 
+		 	
+		 &lt;/tr&gt; <br>
+	</div>
+		 
+	&lt;/table&gt;
+
+</div>
+
+<br>
+
+<!-- tableau avec fond -->
+<a class="titre-3 texte-orange">Tableau avec couleur de fond</a>
+<div class="bordure pd-8 arrondi">
+	
+	<table class="tableau">
+		 <tbody><tr>       
+		 	<th>id</th>       
+		 	<th>Nom</th>       
+		 	<th>Prenom</th>   
+		 	<th>Genre</th> 
+		 </tr>   
+		 <tr>       
+		 	<td>1</td>       
+		 	<td>Yeo</td>       
+		 	<td>Zanga</td>   
+		 	<td class="fond-rouge">Homme</td>
+		 </tr>   
+		 <tr>       
+		 	<td>2</td>       
+		 	<td>Kouadio</td>       
+		 	<td>Aya</td>   
+		 	<td class="fond-rose">Femme</td> 
+		 </tr>
+		 <tr>       
+		 	<td>3</td>       
+		 	<td>Diomandé</td>       
+		 	<td>Yeli</td>   
+		 	<td class="fond-rose">Femme</td> 
+		 </tr> 
+	</tbody></table>
+
+</div>
+
+
+<div class="bordure pd-8 arrondi">
+<small class="fond-orange texte-blanc">code source</small><br>
+
+	&lt;table class="tableau"&gt;<br>
+	<div class="decaler">
+		&lt;tr&gt;<br>      
+		<div class="decaler">
+			&lt;th&gt;id&lt;/th&gt;<br>       
+		 	&lt;th&gt;Nom&lt;/th&gt; <br>      
+		 	&lt;th&gt;Prenom&lt;/th&gt; <br>  
+		 	&lt;th&gt;Genre&lt;/th&gt; <br>
+		</div> 
+		 &lt;/tr&gt;   <br>
+
+		 &lt;tr&gt; <br>   
+		 <div class="decaler">
+		 	&lt;td&gt;1&lt;/td&gt;<br>       
+		 	&lt;td&gt;Yeo&lt;/td&gt;  <br>     
+		 	&lt;td&gt;Zanga&lt;/td&gt;<br>   
+		 	&lt;td class="fond-rouge"&gt;Homme&lt;/td&gt;<br>
+		 </div>   
+		 	
+		 &lt;/tr&gt;   <br>
+		 &lt;tr&gt;   <br>  
+		 <div class="decaler">
+		 	&lt;td&gt;2&lt;/td&gt; <br>      
+		 	&lt;td&gt;Kouadio&lt;/td&gt;  <br>     
+		 	&lt;td&gt;Aya&lt;/td&gt;   <br>
+		 	&lt;td class="fond-rose"&gt;Femme&lt;/td&gt; <br>
+		 </div>  
+		 	
+		 &lt;/tr&gt;<br>
+		 &lt;tr&gt;   <br>   
+		 <div class="decaler">
+		 	&lt;td&gt;3&lt;/td&gt;  <br>     
+		 	&lt;td&gt;Diomandé&lt;/td&gt;  <br>     
+		 	&lt;td&gt;Yeli&lt;/td&gt;   <br>
+		 	&lt;td class="fond-rose"&gt;Femme&lt;/td&gt;<br> 
+		 </div> 
+		 	
+		 &lt;/tr&gt; <br>
+	</div>
+		 
+	&lt;/table&gt;
+
+</div>
+
+<br></div>
+			
+		</div>
+		
+	</body>
+
+
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script> 
+	<script type="text/javascript" src="js/js.js"></script>
+	
+
+
+</html>

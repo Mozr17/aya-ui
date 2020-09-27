@@ -1,0 +1,887 @@
+/*AYA ui 0.0.1 Diabaté Abdoulaye Tiekoro (c) Tout droits réserver 
+   ========================================================================== */
+
+/* PALETTES DES COULEURS*/
+/*:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+}*/
+
+
+/* COULEURS DE TEXTE*/
+.fond-blanc {
+  background-color: white !important;
+}
+.fond-noir {
+  background-color: black !important;
+}
+.fond-sombre {
+  background-color: gray !important;
+}
+.fond-gris {
+  background-color: #ccc !important;
+}
+.fond-bleu {
+  background-color: #007bff !important;
+}
+.fond-rouge {
+  background-color: #dc3545 !important;
+}
+.fond-vert {
+  background-color: #28a745 !important;
+}
+.fond-jaune {
+  background-color: #ffc107 !important;
+}
+.fond-orange {
+  background-color: #fc5e17 !important;
+}
+.fond-rose {
+  background-color: #e83e8c !important;
+}
+
+/* COULEURS DE FOND*/
+.texte-blanc {
+  color: white !important;
+}
+.texte-noir {
+  color: black !important;
+}
+.texte-sombre {
+  color: gray !important;
+}
+.texte-gris {
+  color: #ccc !important;
+}
+.texte-bleu {
+  color: #007bff !important;
+}
+.texte-rouge {
+  color: #dc3545 !important;
+}
+.texte-vert {
+  color: #28a745 !important;
+}
+.texte-jaune {
+  color: #ffea1b !important;
+}
+.texte-orange {
+  color: #fc5e17 !important;
+}
+.texte-rose {
+  color: #e83e8c !important;
+}
+
+/*PADDING ET MARGIN*/
+.pd {
+  padding: 5px;
+}
+.pd-5 {
+  padding: 5px;
+}
+.pd-8 {
+  padding: 8px;
+}
+.pd-10 {
+  padding: 10px;
+}
+.pd-15 {
+  padding: 15px;
+}
+.pd-20 {
+  padding: 20px;
+}
+
+.mg {
+  margin: 5px;
+}
+.mg-5 {
+  margin: 5px;
+}
+.mg-8 {
+  margin: 8px;
+}
+.mg-10 {
+  margin: 10px;
+}
+.mg-15 {
+  margin: 15px;
+}
+.mg-20 {
+  margin: 20px;
+}
+
+/* CONTENEUR*/
+.conteneur {
+  padding-right: 10%;
+  padding-left: 10%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* BOXS*/
+.box {
+  box-shadow: 0 2px 6px 0 #ccc;
+  padding:10px;
+  border-radius: 5px;
+}
+
+/*BORDURES*/
+.bordure{
+  border:1px solid #ccc;/*
+  padding: 10px;*/
+}
+
+.bordure-blanc {
+  border:1px solid white;/*
+  padding: 10px;*/
+}
+.bordure-noir {
+  border:1px solid black;/*
+  padding: 10px;*/
+}
+.bordure-sombre {
+  border:1px solid gray;/*
+  padding: 10px;*/
+}
+.bordure-gris {
+  border:1px solid #ccc;/*
+  padding: 10px;*/
+}
+.bordure-bleu {
+  border:1px solid #007bff;/*
+  padding: 10px;*/
+}
+.bordure-rouge {
+  border:1px solid #dc3545;/*
+  padding: 10px;*/
+}
+.bordure-vert {
+  border:1px solid #28a745;/*
+  padding: 10px;*/
+}
+.bordure-jaune {
+  border:1px solid #ffea1b;/*
+  padding: 10px;*/
+}
+.bordure-orange {
+  border:1px solid #fc5e17;/*
+  padding: 10px;*/
+}
+.bordure-rose {
+  border:1px solid red;/*
+  padding: 10px;*/
+}
+
+.arrondi {
+    border-radius: 5px !important;
+}
+.arrondi-cercle {
+    border-radius: 50% !important;
+}
+.arrondi-pillule {
+    border-radius: 25% !important;
+}
+.arrondi-pt {
+    border-radius: 5px !important;
+}
+.arrondi-gd {
+    border-radius: 15px !important;
+}
+
+/*SMALL*/
+small {
+  font-size: 12px;
+}
+
+/*OMBRES*/
+.ombre {
+    box-shadow: 0 4px 13px 0 #ccc;
+}
+.ombre-pt {
+    box-shadow: 0 4px 5px 0 #ccc;
+}
+.ombre-gd {
+    box-shadow: 0 8px 20px 0 #ccc;
+}
+
+/*BADGE*/
+.badge-blanc {
+  background-color: white !important;
+  padding: 5px;
+  border-radius:5px;
+}
+.badge-noir {
+  background-color: black !important;
+  padding: 5px;
+  border-radius:5px;
+}
+.badge-sombre {
+  background-color: gray !important;
+  padding: 5px;
+  border-radius:5px;
+}
+.badge-gris {
+  background-color: #ccc !important;
+  padding: 5px;
+  border-radius:5px;
+}
+.badge-bleu {
+  background-color: #007bff !important;
+  padding: 5px;
+  border-radius:5px;
+}
+.badge-rouge {
+  background-color: #dc3545 !important;
+  padding: 5px;
+  border-radius:5px;
+}
+.badge-vert {
+  background-color: #28a745 !important;
+  padding: 5px;
+  border-radius:5px;
+}
+.badge-jaune {
+  background-color: #ffc107 !important;
+  padding: 5px;
+  border-radius:5px;
+}
+.badge-orange {
+  background-color: #fc5e17 !important;
+  padding: 5px;
+  border-radius:5px;
+}
+.badge-rose {
+  background-color: #e83e8c !important;
+  padding: 5px;
+  border-radius:5px;
+}
+
+/*TABLEAU*/
+.tableau {
+  border-collapse: collapse;
+}
+.tableau th {
+  font-size: 17px;
+}
+.tableau td, .tableau th {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/*CHAMPS*/
+input, textarea, select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/*FORMULAIRE*/
+.formulaire input {
+  width: 100%;
+}
+.formulaire label {
+  font-weight: bold;
+}
+
+/*AYA ui LA TYPOGRAPHIE*/
+
+/*POLICE*/
+* {
+  font-family: corbel; 
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  outline: none;
+  text-decoration: none;
+}
+
+/*LIEN HYPERTEXTE*/
+a[href] {
+  color: #15ecff;
+  font-style: italic;
+}
+a[href]:hover {
+  text-decoration: none;
+}
+
+/*PARAGRAPHES*/
+p {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+p[class=centrer] {
+  text-align: center;
+}
+p[class=justifier] {
+  text-align: justify;
+}
+
+/*LES HR*/
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-top: 1px solid #ccc;
+  height: 0;
+}
+
+/*EN-TETE*/
+h1 {
+  font-size:35px;
+}
+h2 {
+  font-size:30px; 
+}
+h3 {
+  font-size:25px; 
+}
+h4 {
+  font-size:20px; 
+}
+h5 {
+  font-size:15px; 
+}
+h6 {
+  font-size: 10px;
+}
+
+.titre {
+  font-size:35px;
+  display: block;
+}
+.titre-1 {
+  font-size:35px;
+  display: block;
+}
+.titre-2 {
+  font-size:30px;
+  display: block;
+}
+.titre-3 {
+  font-size:25px; 
+  display: block;
+}
+.titre-4 {
+  font-size:20px; 
+  display: block;
+}
+.titre-5 {
+  font-size:15px; 
+  display: block;
+}
+
+/*AYA ui COMPOSANTS*/
+
+/*MENU*/
+.menu {
+  position: relative;
+  background: transparent;
+  padding:10px;
+  display: flex;
+  margin-bottom: 25px;
+}
+.menu-clair {
+  background: #eee;
+  color: black;
+}
+.menu-sombre {
+  background: gray;
+  color: white;
+}
+
+.menu-logo {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  font-style: normal !important;
+  color: currentColor !important;
+}
+.menu-logo img {
+  width: 40px;
+}
+
+.menu-liens {
+  position: relative;
+  left: 30px;
+  top:3px;
+}
+.menu-liens ul li {
+  display: inline-block;
+  padding-left: 10px;
+}
+.menu-liens ul li a {
+  font-size: 17px;
+  text-decoration: none;
+  font-style: normal;
+  color: currentColor !important;
+  opacity: .8;
+}
+.menu-liens ul li a:hover {
+  opacity: 1;
+}
+
+/*NOTICE*/
+.notice {
+  padding: 10px;
+  position: relative;
+  border-radius: 5px;
+}
+.notice-blanc {
+  background-color: white !important;
+  border: 1px solid #eee;
+  color: black;
+}
+.notice-noir {
+  background-color: black !important;
+  border: 1px solid black;
+  color: white;
+}
+.notice-sombre {
+  background-color: gray !important;
+  border: 1px solid black;
+}
+.notice-gris {
+  background-color: #ccc !important;
+  border: 1px solid gray;
+}
+.notice-bleu {
+  background-color: #dff0ff !important;
+  border: 1px solid #2084d0;
+  color: #2084d0;
+}
+.notice-rouge {
+  background-color: #ffe8e6 !important;
+  border: 1px solid #db2727;
+  color: #db2727;
+}
+.notice-vert {
+  background-color: #e5f9e7 !important;
+  border: 1px solid #41c752;
+  color: #41c752;
+}
+.notice-jaune {
+  background-color: #fff8db !important;
+  border: 1px solid #b58104;
+  color:#b58104;
+}
+.notice-orange {
+  background-color: #ffedde !important;
+  border: 1px solid #f2711c;
+  color: #f2711c;
+}
+.notice-rose {
+  background-color: #ffe3fb !important;
+  border: 1px solid #e03897;
+  color: #e03897;
+}
+
+/*BOUTONS*/
+.bouton, a[class=bouton] {
+  position: relative;
+  padding: 10px;
+  border: none;
+  background-color: #eee;
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+  color: gray;
+  cursor: pointer;
+}
+.bouton:hover, a[class=bouton]:hover {
+  transition: .2s;
+  background-color: #ccc;
+}
+.bouton-blanc, a[class=bouton-blanc] {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #eee;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+  color: gray;
+  cursor: pointer;
+}
+.bouton-blanc:hover, a[class=bouton-blanc]:hover {
+  transition: .2s;
+  background-color: #eee;
+}
+.bouton-noir, a[class=bouton-noir] {
+  position: relative;
+  padding: 10px;
+  border: none;
+  background-color: black;
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  cursor: pointer;
+}
+.bouton-gris, a[class=bouton-gris] {
+  position: relative;
+  padding: 10px;
+  border: none;
+  background-color: #eee;
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+  color: gray;
+  cursor: pointer;
+}
+.bouton-gris:hover, a[class=bouton-gris]:hover {
+  transition: .2s;
+  background-color: #ccc;
+}
+.bouton-bleu, a[class=bouton-bleu] {
+  position: relative;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  cursor: pointer;
+}
+.bouton-bleu:hover, a[class=bouton-bleu]:hover {
+  transition: .2s;
+  background-color: #0070d6;
+}
+.bouton-rouge, a[class=bouton-rouge] {
+  position: relative;
+  padding: 10px;
+  border: none;
+  background-color: #dc3545;
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  cursor: pointer;
+}
+.bouton-rouge:hover, a[class=bouton-rouge]:hover {
+  transition: .2s;
+  background-color: #c12030;
+}
+.bouton-vert, a[class=bouton-vert] {
+  position: relative;
+  padding: 10px;
+  border: none;
+  background-color: #28a745;
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  cursor: pointer;
+}
+.bouton-vert:hover, a[class=bouton-vert]:hover {
+  transition: .2s;
+  background-color: #176622;
+}
+.bouton-jaune, a[class=bouton-jaune] {
+  position: relative;
+  padding: 10px;
+  border: none;
+  background-color: #ffea1b;
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  cursor: pointer;
+}
+.bouton-jaune:hover, a[class=bouton-jaune]:hover {
+  transition: .2s;
+  background-color: #d0a700;
+}
+.bouton-orange, a[class=bouton-orange] {
+  position: relative;
+  padding: 10px;
+  border: none;
+  background-color: #fc5e17;
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  cursor: pointer;
+}
+.bouton-orange:hover, a[class=bouton-orange]:hover {
+  transition: .2s;
+  background-color: #c73602;
+}
+.bouton-rose, a[class=bouton-rose] {
+  position: relative;
+  padding: 10px;
+  border: none;
+  background-color: #e83e8c;
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  cursor: pointer;
+}
+.bouton-rose:hover, a[class=bouton-rose]:hover {
+  transition: .2s;
+  background-color: #cb176f;
+}
+.bouton-sombre, a[class=bouton-sombre] {
+  position: relative;
+  padding: 10px;
+  border: none;
+  background-color: gray;
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  cursor: pointer;
+}
+.bouton-sombre:hover, a[class=bouton-sombre]:hover {
+  transition: .2s;
+  background-color: black;
+}
+/*BOUTON CONTOUR*/
+.bouton-contour, a[class=bouton-contour] {
+  position: relative;
+  padding: 10px;
+  border: 1px solid gray;
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+  color: gray;
+  cursor: pointer;
+}
+.bouton-contour:hover, a[class=bouton-contour]:hover {
+  transition: .2s;
+  background-color: #eee;
+}
+.bouton-contour-blanc, a[class=bouton-contour-blanc] {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #eee;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+  color: gray;
+  cursor: pointer;
+}
+.bouton-contour-blanc:hover, a[class=bouton-contour-blanc]:hover {
+  transition: .2s;
+  background-color: #eee;
+}
+.bouton-contour-noir, a[class=bouton-contour-noir] {
+  position: relative;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+  cursor: pointer;
+}
+.bouton-contour-noir:hover, a[class=bouton-contour-noir]:hover {
+  transition: .2s;
+  background-color: black;
+  color: white;
+}
+.bouton-contour-gris, a[class=bouton-contour-gris] {
+  position: relative;
+  padding: 10px;
+  border: 1px solid gray;
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+  color: #eee;
+  cursor: pointer;
+}
+.bouton-contour-gris:hover, a[class=bouton-contour-gris]:hover {
+  transition: .2s;
+  background-color: #eee;
+  color: white;
+}
+.bouton-contour-bleu, a[class=bouton-contour-bleu] {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #007bff;
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+  color: #007bff;
+  cursor: pointer;
+}
+.bouton-contour-bleu:hover, a[class=bouton-contour-bleu]:hover {
+  transition: .2s;
+  background-color: #007bff;
+  color: white;
+}
+.bouton-contour-rouge, a[class=bouton-contour-rouge] {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #dc3545;
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+  color: #dc3545;
+  cursor: pointer;
+}
+.bouton-contour-rouge:hover, a[class=bouton-contour-rouge]:hover {
+  transition: .2s;
+  background-color: #dc3545;
+  color: white;
+}
+.bouton-contour-vert, a[class=bouton-contour-vert] {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #28a745;
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+  color: #28a745;
+  cursor: pointer;
+}
+.bouton-contour-vert:hover, a[class=bouton-contour-vert]:hover {
+  transition: .2s;
+  background-color: #28a745;
+  color: white;
+}
+.bouton-contour-jaune, a[class=bouton-contour-jaune] {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #ffea1b;
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+  color: #ffea1b;
+  cursor: pointer;
+}
+.bouton-contour-jaune:hover, a[class=bouton-contour-jaune]:hover {
+  transition: .2s;
+  background-color: #ffea1b;
+  color: white;
+}
+.bouton-contour-orange, a[class=bouton-contour-orange] {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #fc5e17;
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+  color: #fc5e17;
+  cursor: pointer;
+}
+.bouton-contour-orange:hover, a[class=bouton-contour-orange]:hover {
+  transition: .2s;
+  background-color: #fc5e17;
+  color: white;
+}
+.bouton-contour-rose, a[class=bouton-contour-rose] {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #e83e8c;
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+  color: #e83e8c;
+  cursor: pointer;
+}
+.bouton-contour-rose:hover, a[class=bouton-contour-rose]:hover {
+  transition: .2s;
+  background-color: #e83e8c;
+  color: white;
+}
+.bouton-contour-sombre, a[class=bouton-contour-sombre] {
+  position: relative;
+  padding: 10px;
+  border: 1px solid gray;
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+  color: gray;
+  cursor: pointer;
+}
+.bouton-contour-sombre:hover, a[class=bouton-contour-sombre]:hover {
+  transition: .2s;
+  background-color: gray;
+  color: white;
+}
+
+/*ETIQUETTE*/
+.etiquette {
+  position: relative;
+  box-shadow: 0 3px 5px 0 #ccc;
+  border-radius: 5px;
+  width: 20rem;
+  overflow: hidden;
+}
+.etiquette-img img{
+  width: 100%
+}
+.etiquette-contenu {
+  padding:15px;
+}
+.etiquette-titre{
+  font-size: 20px;
+  font-weight: bold;
+}
+.etiquette-soustitre{
+  color: gray;
+}
+
+.etiquette-groupe .etiquette {
+  display: inline-block;
+  margin-left:10px;
+  margin-bottom: 5px;
+}
+
+/*LISTE*/
+/*.liste {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}*/
+.liste li {
+  list-style: none;
+
+}
+.liste li a {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  background-color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  color: currentColor;
+}
+.liste li a:hover {
+  background-color: #F6F6F6;
+}
+.liste-titre {
+  font-size: 17px;
+  font-weight: bold;
+}
