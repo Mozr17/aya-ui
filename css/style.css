@@ -1,3 +1,7 @@
+* {
+	font-family:ubuntu;
+}
+
 .sansnom .cote {
 	background-color: #fc5e16;
 	width: 20%;
@@ -72,9 +76,16 @@ code {
   animation: chargement .75s linear infinite;
 }
 
-@media screen and (max-width:680px){
-  .sansnom .cote {
-     width:10%;
-     bright:10%;
-}
+
+
+@media screen and (max-width:1000px){
+	.sansnom .cote {
+		display: none;
+	}
+	.sansnom .corps {
+		width: 100%;
+		left: 0%;
+		padding-right: 5%;
+		padding-left: 5%;
+	}
 }
