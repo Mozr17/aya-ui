@@ -88,4 +88,13 @@ code {
 		padding-right: 5%;
 		padding-left: 5%;
 	}
+	.sansnom .corps img {
+		width: 120%;
+	}
+	h1 {
+		font-size: 100px !important;
+	}
+	.sansnom .corps button {
+		font-size: 100px;
+	}
 }
